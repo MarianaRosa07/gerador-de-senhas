@@ -1,7 +1,6 @@
 import { nanoid } from 'nanoid';
-// console.log(nanoid());
 
-// import copy from 'clipboard-copy';
+import copy from 'clipboard-copy';
 import './style.css';
 
 const passwordBtnEl = document.querySelector('button');
@@ -13,7 +12,7 @@ passwordBtnEl.addEventListener('click', () => {
     console.log(randomPassword);
 });
 
-// displayPasswordEl.addEventListener('click', () => {
-//   copy(event.target.innerHTML);
-//   alert('Senha copiada!');
-// });
+displayPasswordEl.addEventListener('click', () => {
+    copy(event.target.innerHTML);
+    alert('Senha copiada!');
+});
